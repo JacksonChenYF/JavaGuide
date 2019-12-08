@@ -1,4 +1,4 @@
-package com.jackson;
+package com.jacky;
 
 import static org.junit.Assert.assertTrue;
 
