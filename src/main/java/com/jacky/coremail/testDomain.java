@@ -8,7 +8,7 @@ import java.net.*;
  * @Date: 2019/12/21 15:53
  * @Description: 客户域名检测
  */
-public class testdomain {
+public class testDomain {
 
     public static void isOpen(String[] domainurl) throws MalformedURLException {
 
