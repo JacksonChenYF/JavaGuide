@@ -34,7 +34,8 @@ public class testDomain {
                         break;
                     }*/
                 } catch (IOException e) {
-                    break;
+                    continue;
+                    //break;
                     //e.printStackTrace();
                 }
 
@@ -87,7 +88,8 @@ public class testDomain {
 
 
     public static void main(String[] args) throws MalformedURLException {
-        String[] domainurl = new String[]{};
+        String[] domainurl = new String[]{"qdc.com.cn","jaricn.com", "shfu.edu.cn", "zjjyzx.com", "jlsafety.gov.cn",
+                "gxed.ceec.net.cn", "nsccsz.gov.cn"};
         isOpen(domainurl);
 //"gzfda.gov.cn", "rrcb.com", "gshi.cn", "zhongweihotels.com", "lxsec.com","fufeng-group.com", "hualu.com.cn", "sz.tsinghua.edu.cn", "ect888.com"
         /*URL URL = new URL("http://mail.cucn.edu.cn");
