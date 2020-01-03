@@ -1,5 +1,26 @@
 ## Docker
-#### 一、常用指令
+#### 一、登录命令
+~~~~
+1、docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+2、卸载并更新docker
+（1）查找主机上关于Docker的软件包
+# rpm -qa | grep docker
+（2）使用yum remove卸载软件
+# yum remove docker-1.13.1-53.git774336d.el7.centos.x86_64
+（3）使用curl升级到最新版
+# curl -fsSL https://get.docker.com/ | sh
+（4）重启Docker
+# systemctl restart docker
+（5）设置Docker开机自启
+# systemctl enable docker
+（6）查看Docker版本信息
+# docker version
+~~~~
+
+#### 二、常用指令
 ~~~~
 service docker start    //启动docker
 
